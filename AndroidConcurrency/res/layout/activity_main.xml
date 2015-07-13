@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.androidconcurrency.MainActivity" >
+    
+    <TextView
+        android:id="@+id/textSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textSelect"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" >
+        
+    </TextView>
+    
+    <TextView
+        android:id="@+id/textSelectValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textSelect"
+        android:text="@string/textSelect"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" >
+        
+    </TextView>
+    
+    
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp" 
+        android:layout_below="@+id/textSelect"/>
+    
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="48dp"
+        
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" >
+        
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     
+        android:layout_below="@+id/textAnswer"
+        android:layout_marginTop="92dp"
+        android:text="Generate Number Thread" />
+    
+    <Button
+        android:id="@+id/buttonAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     
+        android:layout_below="@+id/buttonThread"
+        android:layout_marginTop="20dp"
+        android:text="Generate Number Async Task" />
+
+</RelativeLayout>
