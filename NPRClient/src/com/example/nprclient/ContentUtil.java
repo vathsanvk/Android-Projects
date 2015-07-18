@@ -73,7 +73,7 @@ public class ContentUtil {
 					String temp = storyJSONObject.getJSONObject("title")
 							.getString("$text");
 
-					String temp1 =android.text.Html.fromHtml(temp).toString();
+					String temp1 = android.text.Html.fromHtml(temp).toString();
 					story.setTitle(temp1);
 				}
 				if (!storyJSONObject.isNull("id")) {
@@ -85,7 +85,7 @@ public class ContentUtil {
 					String temp = storyJSONObject.getJSONObject("miniTeaser")
 							.getString("$text");
 
-					String temp1 =android.text.Html.fromHtml(temp).toString();
+					String temp1 = android.text.Html.fromHtml(temp).toString();
 					story.setMinTeaser(temp1);
 				}
 				if (!storyJSONObject.isNull("pubDate")
@@ -96,9 +96,13 @@ public class ContentUtil {
 				}
 
 				if (!storyJSONObject.isNull("thumbnail")) {
-					story.setThumbnail(storyJSONObject
-							.getJSONObject("thumbnail").getJSONObject("medium")
-							.getString("$text"));
+
+					if (!storyJSONObject.getJSONObject("thumbnail").isNull(
+							"medium")) {
+						story.setThumbnail(storyJSONObject
+								.getJSONObject("thumbnail")
+								.getJSONObject("medium").getString("$text"));
+					}
 				}
 				if (!storyJSONObject.isNull("link")) {
 					JSONArray linkArray = storyJSONObject.getJSONArray("link");
@@ -116,7 +120,7 @@ public class ContentUtil {
 					String temp = storyJSONObject.getJSONObject("teaser")
 							.getString("$text");
 
-					String temp1 =android.text.Html.fromHtml(temp).toString();
+					String temp1 = android.text.Html.fromHtml(temp).toString();
 
 					story.setTeaserText(temp1);
 
