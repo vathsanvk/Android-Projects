@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.topiosapps.AppsActivity" >
+
+   
+    
+    <item android:id="@+id/sortDevName"
+        android:showAsAction="never"
+        android:title="Sort By Developer"
+        />
+    
+    <item android:id="@+id/sortTitle"
+        android:showAsAction="never"
+        android:title="Sort By App Name"
+        />
+    
+    <item android:id="@+id/sortPrice"
+        android:showAsAction="never"
+        android:title="Sort By App Price"
+        />
+    
+    <item android:id="@+id/clearHistory"
+        android:showAsAction="never"
+        android:title="Clear History"
+        />
+
+</menu>

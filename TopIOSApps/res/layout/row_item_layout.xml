@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/devName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/imageView" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rlsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devName"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/imageView" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp" >
+    </TextView>
+
+</RelativeLayout>
