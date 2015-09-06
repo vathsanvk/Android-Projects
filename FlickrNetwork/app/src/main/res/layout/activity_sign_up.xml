@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/signFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="First Name"></EditText>
+
+            <EditText
+                android:id="@+id/signLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Last Name"></EditText>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signName"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"></EditText>
+
+        <EditText
+            android:id="@+id/signPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signEmail"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textWebPassword"></EditText>
+
+        <EditText
+            android:id="@+id/signConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signPassword"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textWebPassword"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCancel"
+                android:layout_alignLeft="@+id/btnCancel"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:text="Sign Up" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

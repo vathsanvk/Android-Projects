@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.srivathsanvk.flickrnetwork.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/detailsImage"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="7dp"
+        android:background="@android:color/black"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:text="All Posted Comments" />
+
+
+        <ImageView
+            android:id="@+id/addCommentButton"
+            android:layout_margin="7dp"
+            android:src="@drawable/add_comment"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/detailsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>
