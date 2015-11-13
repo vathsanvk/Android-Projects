@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Photo implements Serializable{
 	
-	String title, url, name;
-	int _id;
+	private String title, url, name;
+	private int _id;
 	public int get_id() {
 		return _id;
 	}
