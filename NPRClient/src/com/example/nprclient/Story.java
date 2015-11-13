@@ -3,11 +3,11 @@ package com.example.nprclient;
 import java.io.Serializable;
 
 public class Story implements Serializable{
-	String title, pubDate, minTeaser, thumbnail, link, repName, dateAired,
+	private String title, pubDate, minTeaser, thumbnail, link, repName, dateAired,
 			 teaserText, streamUrl;
 	
-	int lenAudio;
-	boolean isFav;
+	private int lenAudio;
+	private boolean isFav;
 	
 	public String toString(){
 		return title + " " + isFav;
