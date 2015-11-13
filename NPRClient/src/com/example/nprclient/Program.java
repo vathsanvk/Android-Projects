@@ -6,8 +6,8 @@ public class Program {
 		return title;
 	}
 
-	String title;
-	int id;
+	private String title;
+	private int id;
 
 	public String getTitle() {
 		return title;
